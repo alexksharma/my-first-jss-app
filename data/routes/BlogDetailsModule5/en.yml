@@ -1,0 +1,126 @@
+id: BlogDetailsModule5
+fields:
+  pageTitle: TA Digital JSS Powered Blog
+placeholders:
+  jss-main:
+  # - componentName: ContentBlock
+  #   fields:
+  #     heading: Using GraphQL with JSS
+  #     content: |
+  #       <p>This is a live example of using Integrated GraphQL and Connected GraphQL with a JSS app.
+  #       For more information on GraphQL use in JSS, please see <a href="https://jss.sitecore.net" target="_blank" rel="noopener noreferrer">the documentation</a>.</p>
+  # - componentName: GraphQL-Layout
+  #   placeholders:
+  #     jss-graphql-layout:
+  #     - componentName: GraphQL-IntegratedDemo
+  #       fields:
+  #         sample1: Hello integrated GraphQL world!
+  #         sample2:
+  #           href: https://www.sitecore.com
+  #           target: _blank
+  #           text: GraphQL lets you get structured field data too
+  #     - componentName: GraphQL-ConnectedDemo
+  #       fields:
+  #         sample1: Hello connected GraphQL world!
+  #         sample2:
+  #           href: https://www.sitecore.com
+  #           target: _blank
+  #           text: GraphQL lets you get structured field data too
+  # - componentName: ContentBlock
+  #   fields:
+  #     heading: a
+  #     # to author content in YAML, use _multi-line values_ (prefixed with | + endline)
+  #     # as long as the same indent is preserved at the beginning of each line, no escaping
+  #     # is required at all in the value, making it easy to read
+  #     content: a
+  # - componentName: ContentHolder
+  #   placeholders:
+  #     jss-contentholder:
+  #     - componentName: MyFirstComponent
+  #       fields:
+  #         heading: a
+  # - componentName: ContentHolder            
+  #   placeholders:
+  #     jss-BlogHeader:
+  - componentName: BlogHeader
+    fields:
+      HeaderContent : TA Digitals Sitecore JSS Powered Blog
+      HeaderSubTitle : 
+                <a href="https://jss.sitecore.com/" class="text-light">Sitecore JSS</a> promises to be the way of the future.
+  # - componentName: ContentHolder          
+  #   placeholders:
+  #     jss-BlogTagComponent:
+  - componentName: BlogTagComponent
+    fields:
+      heading: Tags, Topics & Archive      
+  # - componentName: ContentHolder          
+  #   placeholders:
+  #     jss-BlogArticle:
+      tagContentList:
+      # see /data/content/Tags/ContentListField for definitions of these IDs
+      - id: Tag-1
+      - id: Tag-2
+      - id: Tag-3
+      - id: Tag-4
+  - componentName: BlogArticle
+    fields:
+      category: Design
+      title : Long blog post title
+      postDate: Dec 11, 2018
+      postImage : 
+        src: /data/media/img/jss_logo.png
+        alt: Card image cap
+        class: card-img-top
+      description : 
+                <p>Bacon ipsum dolor amet pork chop salami ham aliqua anim incididunt. Ex reprehenderit sed sausage
+                    filet mignon aliquip. Elit beef fugiat est dolore. Meatball tri-tip eu dolor tenderloin pig
+                    duis culpa corned beef prosciutto bacon adipisicing enim. Pig sausage lorem irure ipsum fugiat
+                    jowl esse. Ea eiusmod capicola incididunt boudin kielbasa adipisicing short loin exercitation
+                    t-bone sirloin officia.</p>
+
+                <p>Beef ribs prosciutto consequat venison, in ground round occaecat ham hock sed do elit. Culpa
+                    tempor turkey ut sirloin. Consequat boudin filet mignon est in non. Dolor bacon bresaola ut
+                    turkey, ipsum tail pork loin drumstick short ribs.</p>
+                <p>Deserunt turkey in, landjaeger enim andouille drumstick buffalo ribeye corned beef. Pariatur
+                    turkey dolor in pork loin do ut, et pork. Sausage do pariatur chicken consectetur frankfurter
+                    landjaeger pork loin esse dolor corned beef ut kielbasa bacon cupidatat. Dolor eiusmod shoulder
+                    kevin kielbasa. Jowl pork belly ball tip adipisicing.</p>
+                <p>Brisket cow turducken pariatur pork loin prosciutto. Cow veniam laborum jowl pancetta.
+                    Burgdoggen short loin tongue picanha excepteur beef tempor. Venison dolore ullamco, deserunt
+                    occaecat commodo ex turkey hamburger. Pancetta ham ut ullamco ipsum anim id short ribs short
+                    loin t-bone aliqua.</p>
+                <p>Ground round reprehenderit biltong, shoulder shank veniam burgdoggen laborum spare ribs
+                    consectetur labore cillum landjaeger occaecat. Landjaeger ea ut aliquip, do beef ribs dolore
+                    t-bone shank incididunt et cupim bacon pork belly. Meatloaf t-bone irure non pancetta. Cillum
+                    esse tail aliqua boudin shank filet mignon kielbasa sausage mollit proident.</p>  
+      blogtagContentList:
+      # see /data/content/Tags/ContentListField for definitions of these IDs
+      - id: Tag-1
+      - id: Tag-3
+      blogArticleList:
+      # see /data/content/Tags/ContentListField for definitions of these IDs
+      - id: BlogPost-5      
+  # - componentName: BlogPostCard
+  #   fields:
+  #     category: Design
+  #     title : Super long blog post title
+  #     postDate: Dec 1, 2018
+  #     postImageSmall : 
+  #       src: /data/media/img/jss_logo.png
+  #       alt: Card image cap
+  #       class: card-img-top
+  #     abstractText : 
+  #               Some quick example text to build on the Blog post title and make up the bulk of the card's
+  #                       content.                                
+  - componentName: BlogPostCardCollection
+    fields:
+      heading: "More posts you might be interested in:"     
+  # - componentName: ContentHolder          
+  #   placeholders:
+  #     jss-BlogArticle:
+      blogArticleList:
+      # see /data/content/Tags/ContentListField for definitions of these IDs
+      - id: BlogPost-1
+      - id: BlogPost-3
+      - id: BlogPost-4
+      - id: BlogPost-5

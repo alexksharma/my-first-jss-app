@@ -1,0 +1,6 @@
+id: Tag-3
+displayName: Extra Long Tag
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: KeyValue-Item-Template
+fields:
+  KeyValue: Extra Long Tag
