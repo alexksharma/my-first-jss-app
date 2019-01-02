@@ -1,0 +1,48 @@
+id: BlogPost-6
+displayName: BlogPost 6
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: BlogPost-Item-Template
+fields:
+  category: Design
+  title : Long blog post title 6
+  postDate: Oct 31, 2018
+  postImage : 
+    src: /data/media/img/366.jpg
+    alt: Card image cap
+    class: card-img-top
+  description : 
+            <p>Bacon ipsum dolor amet pork chop salami ham aliqua anim incididunt. Ex reprehenderit sed sausage
+                filet mignon aliquip. Elit beef fugiat est dolore. Meatball tri-tip eu dolor tenderloin pig
+                duis culpa corned beef prosciutto bacon adipisicing enim. Pig sausage lorem irure ipsum fugiat
+                jowl esse. Ea eiusmod capicola incididunt boudin kielbasa adipisicing short loin exercitation
+                t-bone sirloin officia.</p>
+
+            <p>Beef ribs prosciutto consequat venison, in ground round occaecat ham hock sed do elit. Culpa
+                tempor turkey ut sirloin. Consequat boudin filet mignon est in non. Dolor bacon bresaola ut
+                turkey, ipsum tail pork loin drumstick short ribs.</p>
+            <p>Deserunt turkey in, landjaeger enim andouille drumstick buffalo ribeye corned beef. Pariatur
+                turkey dolor in pork loin do ut, et pork. Sausage do pariatur chicken consectetur frankfurter
+                landjaeger pork loin esse dolor corned beef ut kielbasa bacon cupidatat. Dolor eiusmod shoulder
+                kevin kielbasa. Jowl pork belly ball tip adipisicing.</p>
+            <p>Brisket cow turducken pariatur pork loin prosciutto. Cow veniam laborum jowl pancetta.
+                Burgdoggen short loin tongue picanha excepteur beef tempor. Venison dolore ullamco, deserunt
+                occaecat commodo ex turkey hamburger. Pancetta ham ut ullamco ipsum anim id short ribs short
+                loin t-bone aliqua.</p>
+            <p>Ground round reprehenderit biltong, shoulder shank veniam burgdoggen laborum spare ribs
+                consectetur labore cillum landjaeger occaecat. Landjaeger ea ut aliquip, do beef ribs dolore
+                t-bone shank incididunt et cupim bacon pork belly. Meatloaf t-bone irure non pancetta. Cillum
+                esse tail aliqua boudin shank filet mignon kielbasa sausage mollit proident.</p>
+  blogtagContentList:
+  # see /data/content/Tags/ContentListField for definitions of these IDs
+  - id: Tag-1
+  - id: Tag-2  
+  postImageSmall : 
+    src: /data/media/img/366.jpg
+    alt: Card image cap
+    class: card-img-top
+  abstractText : 
+            Some quick example <b>text to build on the Blog post title</b> and make up the bulk of the card's
+                    content.
+  blogpostInternalLink:
+    href: /blogdetailsmodule6
+    text: Read on                           

@@ -8,3 +8,4 @@ a[target='_blank']:after {
   are set to edit mode.
 */
 .scChromeData, .scpm { display: none !important; }
+.searchControl {width:350px;}

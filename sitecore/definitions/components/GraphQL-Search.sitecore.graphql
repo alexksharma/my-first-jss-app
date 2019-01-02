@@ -1,0 +1,36 @@
+query SearchQuery($contextItem: String!) {
+  search(fieldsEqual: [{name: "_fullpath", value: "/sitecore/content/my-first-jss-app/Content/BlogPostCollection/ContentListField*"}
+  , {name: "category", value: "<searchString>"}]) {
+    results {
+      items {
+        item {
+          id
+          name
+          path
+          url
+          ... on BlogPostItemTemplate {
+            category {
+              value
+            }
+            title {
+              value
+            }
+            blogtagContentList {
+              value
+            }
+            postDate{value, formattedDateValue}
+            abstractText{value}
+            postImageSmall{value, alt, src}
+            blogpostInternalLink{value, id, url, text}      
+          }
+        }
+      }
+    }
+  }
+  contextItem: item(path: $contextItem) {
+    id
+    name
+    path
+    url
+  }
+}

@@ -53,6 +53,7 @@ fetch(jssConfig.graphQLEndpoint, {
     const filteredData = result.data.__schema.types.filter((type) => type.possibleTypes !== null);
 
     const filteredResult = { ...result };
+    //const filteredResult = result;
     filteredResult.data.__schema.types = filteredData;
 
     fs.writeFile(

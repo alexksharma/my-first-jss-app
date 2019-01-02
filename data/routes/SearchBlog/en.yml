@@ -1,0 +1,28 @@
+id: SearchBlog
+fields:
+  pageTitle: TA Digital JSS Powered Blog Search
+placeholders:
+  jss-main:
+  - componentName: BlogHeader
+    fields:
+      HeaderContent : TA Digitals Sitecore JSS Powered Blog Search
+      HeaderSubTitle : 
+                <a href="https://jss.sitecore.com/" class="text-light">Sitecore JSS</a> promises to be the way of the future.
+  # - componentName: ContentHolder          
+  #   placeholders:
+  #     jss-BlogTagComponent:
+  - componentName: BlogTagComponent
+    fields:
+      heading: Tags, Topics & Archive      
+  # - componentName: ContentHolder          
+  #   placeholders:
+  #     jss-BlogArticle:
+      tagContentList:
+      # see /data/content/Tags/ContentListField for definitions of these IDs
+      - id: Tag-1
+      - id: Tag-2
+      - id: Tag-3
+      - id: Tag-4
+  - componentName: SearchBlog
+    fields:
+      heading: "Search blogs by category"

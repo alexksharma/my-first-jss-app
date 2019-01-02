@@ -38,7 +38,7 @@ placeholders:
   #     jss-BlogHeader:
   - componentName: BlogHeader
     fields:
-      HeaderContent : TA Digitals Sitecore JSS Powered Blog
+      HeaderContent : TA Digitals Sitecore JSS Powered Blog111
       HeaderSubTitle : 
                 <a href="https://jss.sitecore.com/" class="text-light">Sitecore JSS</a> promises to be the way of the future.
   # - componentName: ContentHolder          
@@ -138,4 +138,5 @@ placeholders:
       - id: BlogPost-2      
       - id: BlogPost-3
       - id: BlogPost-4
-      - id: BlogPost-5                     
+      - id: BlogPost-5   
+      - id: BlogPost-6                          
