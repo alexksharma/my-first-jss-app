@@ -5,9 +5,9 @@ placeholders:
   jss-main:
   - componentName: BlogHeader
     fields:
-      HeaderContent : TA Digitals Sitecore JSS Powered Blog Search
+      HeaderContent : Sitecore JSS Powered Blog Search
       HeaderSubTitle : 
-                <a href="https://jss.sitecore.com/" class="text-light">Sitecore JSS</a> promises to be the way of the future.
+                <a href="https://jss.sitecore.com/" class="text-light">Sitecore JSS</a> promises to be the way of the future.<br/>Click <a href="./" class="text-light">here</a> for Homepage
   # - componentName: ContentHolder          
   #   placeholders:
   #     jss-BlogTagComponent:

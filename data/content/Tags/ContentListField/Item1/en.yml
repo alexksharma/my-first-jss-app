@@ -1,6 +1,6 @@
 id: Tag-1
 displayName: Tag
-# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+# Template defines the available fields. See /sitecore/definitions/templates/KeyValue-Template.sitecore.js
 template: KeyValue-Item-Template
 fields:
   KeyValue: Tag

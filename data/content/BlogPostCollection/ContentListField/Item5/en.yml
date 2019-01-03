@@ -4,7 +4,7 @@ displayName: BlogPost 5
 template: BlogPost-Item-Template
 fields:
   category: Design
-  title : Long blog post title 5
+  title : Designers Idea 5
   postDate: Oct 31, 2018
   postImage : 
     src: /data/media/img/366.jpg

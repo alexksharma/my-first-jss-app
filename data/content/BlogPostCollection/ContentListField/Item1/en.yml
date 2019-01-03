@@ -44,5 +44,5 @@ fields:
             Some quick example text to build on the Blog post title and make up the bulk of the card's
                     content.
   blogpostInternalLink:
-    href: /
+    href: /blogdetailsmodule1
     text: Read on

@@ -4,7 +4,7 @@ displayName: BlogPost 4
 template: BlogPost-Item-Template
 fields:
   category: Design
-  title : Long blog post title 4
+  title : Designers choice 4
   postDate: Nov 13, 2018
   postImage : 
     src: /data/media/img/arch.jpg

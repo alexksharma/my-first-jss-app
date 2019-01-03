@@ -22,6 +22,8 @@ class SearchBlog extends React.Component {
 
   componentDidMount() {
     var searchValue = document.getElementById("txtSearch").value;
+    var ddlCategory = document.getElementById("ddlCategory");
+    var selectedCategoryValue = ddlCategory.options[ddlCategory.selectedIndex].value;
 
     //var condition =", {name: 'category', value: '${searchValue}'}";
     //var condition = GetSearchValue();
@@ -29,7 +31,9 @@ class SearchBlog extends React.Component {
 
     var query = `{
 search(fieldsEqual: [{name: "_fullpath", value: "/sitecore/content/my-first-jss-app/Content/BlogPostCollection/ContentListField/*"}
-, {name: "category", value: "${searchValue}"}]) {
+, {name: "category", value: "${selectedCategoryValue}"}
+, {name: "title", value: "${searchValue}"}
+]) {
 results {
 items {
   item {
@@ -95,13 +99,26 @@ items {
 
           {/* <h1>Hello {this.props.myVarName} !!!!</h1>
           <h1>Hello {this.state.myStatevariable} !!!!</h1> */}
+          <hr/>
           <div class="col-sm-12 related-posts-title-holder">
-          <span class="related-posts-title text-muted">Search By Category : Available categories are - design, laptop, computer.</span>
+          {/* <span class="related-posts-title text-muted">
+          Search By Category : Available categories are - design, laptop, computer.</span> */}
            <br/>
+           Category : 
+           <select  class="searchControl" id="ddlCategory">
+  <option value="*" selected>---- Select All ----</option>
+  <option value="Computer" >Computer</option>
+  <option value="Design">Design</option>
+  <option value="Laptop">Laptop</option>
+</select> 
+           <br/>
+            Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
             <input class="searchControl" id="txtSearch" type="text"></input>
+            <br/>
             <button id="btnSearch" width="80px" onClick={this.componentDidMount}>Search</button>
             {/* <h1>Hello {this.state.isLoading} !!!!</h1> */}
           </div>
+          <hr/>
         </div>
         <br/>
         <div class="row">
